@@ -1,79 +1,111 @@
-<!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <link rel="stylesheet" href="style1.css">
- <script derfer src="javascr.js"></script>
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
- <title>SustainableWeb</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4d4ea64e39.js" crossorigin="anonymous"></script>
+    <title>Clinique Harmonie</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+ 
+
+<!--Det er vores header med logo-billede-->   
+  <div class="logo">
+   <a href="index.html"><img src="img/cliniqueharmonie.png" width="45%"></a>
+  </div>
+
+
+
+<!--Det vores navigationsbar med vores sider-->     
+  <nav>
+    <ul>
+        <li><a href="index.html">HJEM</a><li>
+        <li><a href="#">BEHANDLINGER</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="om os.html">OM OS</a></li>
+        <li><a href="anmeldelser.html">ANMELDELSER</a></li>
+        <li><a href="kontakt.html">KONTAKT</a></li>
+    </ul>
+  </nav>
+
+
+
+
+<!--Det er FORSIDENS indhold med forsidebillede, tekstindhold og bookingknap-->  
+  <div class="forsidebillede">
+   <img src="img/forside.png" alt="ansigtsbehandling1" width="100%">
+   <br></br>
+  </div>
+
+  <h1>Kosmetiske behandlinger, massage og zone terapi i hjertet af Brønshøj</h1>
+  <p>Vi glæder os til at byde dig velkommen i klinikken.</p>
+  <p>Clinique Harmonie vil sørger for at skabe HARMONIE mellem ro, god tid, professionalisme og personlig betjening.</p>
+  <p>Kom gerne i god tid før din behandling og nyd roen, en kop god kaffe eller the og et af vores mange magasiner.</p> 
+  <p>Slap af og luk af for verden udenfor.</p>
+  <br></br>
+
+  <div class="book">
+   <a href="https://www.eadministration.dk/kunde/kundelogin.asp?guid=B801C684-114D-430D-841E-1C81981C1131" target="_blank">BOOK DIN TID NU!</a>
+  </div>
+
+
+
   
-<!--Det er min header med logo, overskrift, navigationsbar og darkmode icon-->   
-<div class="header">
- <nav>
-  <a href="#" class="logo"><img src="img/Logo.png" id="logo"></a>
-  <h2><span>SustainableWeb</span></h2>
- <ul>
-  <li><a href="index.html">Hjem</a></li>
-  <li><a href="CDR.html">Om CDR</a></li>
-  <li><a href="SAP.html">Om SAP</a></li>
- </ul>
-<div class="toggle-btn" id="btn">
- <span id="btnText">Dark</span>
- <img src="img/måne.png" id="btnIcon"> 
-</div>
- </nav>
-
-       
-<!--Det her er Hjem-sidens indhold/content (tekst og et billede)-->
-<div class="content">
-<h1><span>“We don’t have to engage in grand, heroic<br></br>
-<h1><span>actions to participate in change. Small acts,<br></br>
-<h1><span>When multiplied by millions of people, can<br></br> 
-<h1><span>transform the world.”</span></h1>
-<br></br>
- <p>- Howard Zinn</p>
-</div>
-</div> 
-
-<div class="forsidebillede">
- <img src="img/Forsidebillede.jpg">
-</div>
-</div>
-
-       
-<!--Det her er koden til mit Javascipt element.
-Kodens funktion er at switche mellem Dark og Light mode-->
-<script>
-let btn = document.getElementById("btn");
-let btnText = document.getElementById("btnText");
-let btnIcon = document.getElementById("btnIcon")
-let logo = document.getElementById("logo");
-
-btn.onclick = function(){
-document.body.classList.toggle("dark-theme");
-if(document.body.classList.contains("dark-theme")){
-btnIcon.src = "img/sol.png";
-btnText.innerHTML = "Light"; 
-logo.src = "img/Logo.png";
-}else{
-btnIcon.src = "img/måne.png";
-btnText.innerHTML = "Dark"; 
-logo.src = "img/Logo.png";
-}
-}
-</script>
-           
+<!--Det er vores footer--> 
+<div class="footer">
   
+<!--Det er adresse og kontaktoplysningerne i footeren-->  
+<div class="divfooter">
+ <h2>Clinique Harmonie</h2>
+  <div class="borderline"></div>
+      <ul>
+        <li>Tuxensvej nr. 1</li>
+        <li>2700 Brønshøj</li>
+        <li>Tlf. +45 38 28 29 29</li>
+        <li>Mail@cliniqueharmonie.dk</li>
+      </ul>
+  </div>
+
+<!--Det er åbningstiderne i footeren-->  
+<div class="divfooter">
+ <h2>Åbningstider</h2>            
+  <div class="borderline"></div>
+      <ul>
+        <li>Mandag Lukket</li>
+        <li>Tirsdag 10:00-17:30</li>
+        <li>Onsdag 10:00-17:30</li>
+        <li>Torsdag 10:30-17:30</li>
+        <li>Fredag 09:30-15:00</li>
+        <li>Lørdag 09:30-14:00</li>
+        <li>Søndag Lukket</li>
+      </ul>      
+  </div>
+
+<!--Det er shoppens mærker/brands i footeren-->  
+  <div class="divfooter">
+   <h2>SHOP</h2>
+    <div class="borderline"></div>
+      <ul>
+        <li>Decléor produkter</li>
+        <li>BUUR produkter</li>
+        <li>Vild Nord produkter</li>
+        <li>Grums produkter</li>
+      </ul>
+    </div>
+
+   <!--Det er de sociale medier i footeren (Facebook og Instagram)-->   
+  <div class="divfooter" id="follow">
+   <h2>Følg os</h2>
+    <div class="borderline"></div>
+      <ul>
+        <a href="https://www.facebook.com/cliniqueharmoniebroenshoej"><li class="lii"><i class="fa-brands fa-square-facebook fa-2x"></i></li></a>
+        <a href="https://www.instagram.com/clinique_harmonie.dk/?hl=da"><li class="lii"><i class="fa-brands fa-square-instagram fa-2x"></i></li></a>
+        
+      </ul>
+  </div>
+  </div>
+
 </body>
-<!--Det er min footer--> 
-<footer class="footer">
-</footer>
 </html>
-    
