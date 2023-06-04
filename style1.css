@@ -1,0 +1,170 @@
+/* Overordnet struktur */
+* {
+margin: 0;
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+box-sizing: border-box;
+}
+    
+
+/* Her tilføjes farverne, som der har betydning for Light mode og Dark mode */
+:root {
+--background-color: #fff;
+--text-color: #000;
+}
+.dark-theme {
+--background-color: #000;
+--text-color: #999;
+}
+       
+     
+/* Her tilføjes farverne til min body */
+body {
+background: var(--background-color);
+color: var(--text-color);
+transition: background 0.8s, color 0.8s;
+}
+    
+       
+/* Her tilpasses headeren */
+.header {
+width: 100%;
+min-height: 100vh;
+padding: 0 8%;
+position: relative;
+overflow: hidden;
+} 
+
+/* Her tilpasses logo-billedet i headeren samt styling af fonten ved siden af */
+.logo img {
+width: 80px;
+}
+    
+.logo h2 span {
+font-family: 'Montserrat', sans-serif;    
+text-align: left;
+width: 100%;
+margin-right: 50px;
+}
+    
+     
+/* Her tilpasses min navigtionsbar + styling af den */
+nav{
+display: flex;
+align-items: center;
+padding: 10px 0;
+}
+    
+nav ul {
+width: 100%;
+text-align: right;
+list-style: none;
+margin-right: 50px;
+}
+    
+nav ul li {
+display: inline-block;
+margin: 5px 15px;
+}
+    
+nav ul li a {
+text-decoration: none;
+color:var(--text-color);
+font-weight: 400;
+}
+    
+/* Her tilpasses min hover til navigationsbaren (mouseover) + styling af den */
+a:hover {
+color: #555;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+    
+    
+/* Her tilpasses icon-billederne med Light mode og Dark mode + styling */
+.toggle-btn {
+background: #301915;
+color: #fff;
+font-weight: 400;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 200px;
+height: 35px;
+border-radius: 20px;
+cursor: pointer;
+}
+.toggle-btn img {
+width: 25px;
+margin-left: 10px;
+}
+        
+        
+/* Her tilpasses forsidens content + styling af font (overskift og tekst) */
+.content {
+margin-top: 6%;
+max-width: 600px;
+}
+    
+.content h1 {
+font-size: 20px;
+color: var(--text-color);
+font-family: 'Montserrat', sans-serif;
+font-weight: 800;
+text-align: left;
+font-style: italic;
+}    
+    
+/* Her tilpasses forsidebilledet (forsidens content) */
+.forsidebillede img {
+width: 500px;
+display: block;
+}
+.forsidebillede {
+position: absolute;
+bottom: 5%;
+right: 10%;
+}
+    
+    
+/* Her tilpasses og styles section 1 (CDR-content) */
+.CDR-content {
+margin-top: 6%;
+max-width: 600px;
+}
+        
+.CDR-content h1 {
+font-size: 20px;
+color: var(--text-color);
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+text-align: left;
+}
+        
+
+/* Her tilpasses og styles section 2 (SAP-content) */
+.SAP-content {
+margin-top: 6%;
+max-width: 600px;
+}
+    
+.SAP-content h1 {
+font-size: 20px;
+color: var(--text-color);
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+text-align: left;
+}
+
+
+/* Min footer - Tilpasning og style */
+.footer {
+background-color: #000; 
+color: #fff; 
+font-size: x-small;
+width: 100%;
+height: 20px;   
+}
+    
+
